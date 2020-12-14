@@ -141,6 +141,7 @@
     <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
     
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Reset stats</string>
-    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="battery_stats_reset">Clear usage data?</string>
+    <string name="battery_stats_message">Battery usage data will be lost</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
 </resources>
