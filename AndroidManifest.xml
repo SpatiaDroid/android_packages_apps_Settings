@@ -4323,6 +4323,12 @@
             </intent-filter>
         </receiver>
 
+        <!-- Disable startup provider due to resource loading issue. -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
 
         <!-- Begin riceDroid Settings -->
