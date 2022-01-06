@@ -560,4 +560,9 @@
 
     <!-- Whether the given language capitalizes nouns -->
     <bool name="language_capitalizes_nouns">false</bool>
+
+    <!-- The number of visible app icons while entering app list related pages for preloading.
+         Take the "Unrestricted data" page as the example, the visible app icons could be 15
+         on 6.4 inches screen size whether the font size and display size are both small. -->
+    <integer name="config_num_visible_app_icons">20</integer>
 </resources>

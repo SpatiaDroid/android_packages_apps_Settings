@@ -43,6 +43,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageItemInfo;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -123,6 +124,8 @@ import com.android.settings.notification.app.AppNotificationSettings;
 import com.android.settings.widget.LoadingViewController;
 import com.android.settings.wifi.AppStateChangeWifiStateBridge;
 import com.android.settings.wifi.ChangeWifiStateDetails;
+import com.android.settingslib.applications.AppIconCacheManager;
+import com.android.settingslib.applications.AppUtils;
 import com.android.settingslib.applications.ApplicationsState;
 import com.android.settingslib.applications.ApplicationsState.AppEntry;
 import com.android.settingslib.applications.ApplicationsState.AppFilter;
@@ -550,6 +553,7 @@ public class ManageApplications extends InstrumentedFragment
             mApplications.release();
         }
         mRootView = null;
+        AppIconCacheManager.getInstance().release();
     }
 
     @Override
@@ -1311,6 +1315,11 @@ public class ManageApplications extends InstrumentedFragment
             if (DEBUG) {
                 Log.d(TAG, "onRebuildComplete size=" + entries.size());
             }
+
+            // Preload top visible icons of app list.
+            AppUtils.preloadTopIcons(mContext, entries,
+                    mContext.getResources().getInteger(R.integer.config_num_visible_app_icons));
+
             final int filterType = mAppFilter.getFilterType();
             if (filterType == FILTER_APPS_POWER_ALLOWLIST
                     || filterType == FILTER_APPS_POWER_ALLOWLIST_ALL) {
@@ -1468,8 +1477,7 @@ public class ManageApplications extends InstrumentedFragment
             synchronized (entry) {
                 mState.ensureLabelDescription(entry);
                 holder.setTitle(entry.label, entry.labelDescription);
-                mState.ensureIcon(entry);
-                holder.setIcon(entry.icon);
+                updateIcon(holder, entry);
                 updateSummary(holder, entry);
                 updateSwitch(holder, entry);
                 holder.updateDisableView(entry.info);
@@ -1477,6 +1485,20 @@ public class ManageApplications extends InstrumentedFragment
             holder.setEnabled(isEnabled(position));
 
             holder.itemView.setOnClickListener(mManageApplications);
+        }
+
+        private void updateIcon(ApplicationViewHolder holder, AppEntry entry) {
+            final Drawable cachedIcon = AppUtils.getIconFromCache(entry);
+            if (cachedIcon != null && entry.mounted) {
+                holder.setIcon(cachedIcon);
+            } else {
+                ThreadUtils.postOnBackgroundThread(() -> {
+                    final Drawable icon = AppUtils.getIcon(mContext, entry);
+                    if (icon != null) {
+                        ThreadUtils.postOnMainThread(() -> holder.setIcon(icon));
+                    }
+                });
+            }
         }
 
         private void updateSummary(ApplicationViewHolder holder, AppEntry entry) {
