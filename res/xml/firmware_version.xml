@@ -21,25 +21,19 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- crDroid logo -->
-    <PreferenceScreen
-        android:layout="@layout/crdroid_logo"
-        android:key="crdroid_logo"
+    <!-- arcanaOS info -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="arcana_info"
+        android:layout="@layout/arcana_info"
         android:selectable="false" />
-
-    <!-- Device name -->
-    <Preference
-        android:key="about_device_name"
-        android:title="@string/about_device_name"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
-
+        
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_android_version"
+        settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
@@ -56,33 +50,18 @@
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
+        android:icon="@drawable/ic_device_status"
+        settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Vendor security patch -->
-    <Preference
-        android:key="vendor_security_key"
-        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
-
-    <!-- Mainline module version -->
-    <!--
-    <Preference
-        android:key="module_version"
-        android:title="@string/module_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
-    -->
-
     <!-- Baseband -->
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_model_hardware"
         android:selectable="false"
+        settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
@@ -91,6 +70,8 @@
         android:key="kernel_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_legal"
+        settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
@@ -108,7 +89,9 @@
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_build_number"
         android:selectable="false"
+        settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
