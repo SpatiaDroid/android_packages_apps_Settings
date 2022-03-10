@@ -122,7 +122,7 @@
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
     <dimen name="search_bar_height">52dp</dimen>
-    <dimen name="search_bar_text_size">20sp</dimen>
+    <dimen name="search_bar_text_size">18sp</dimen>
     <dimen name="search_bar_corner_radius">28dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
@@ -468,7 +468,8 @@
     <!-- Card Layout -->
     <dimen name="card_margin_start">16.0dp</dimen>
     <dimen name="card_margin_end">16.0dp</dimen>
+    <dimen name="card_padding_end">70.0dp</dimen>
     <dimen name="card_height">75.0dp</dimen>
-    <dimen name="card_radius">8.0dp</dimen>
+    <dimen name="card_radius">14.0dp</dimen>
     <dimen name="dashboard_icon_size">36dp</dimen>
 </resources>
