@@ -171,6 +171,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.rice.settings.riceDroidSettingsLayout;
 import com.rice.settings.fragments.ui.SmartPixels;
+import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
 public class SettingsGateway {
 
@@ -331,6 +332,7 @@ public class SettingsGateway {
             riceDroidSettingsLayout.class.getName(),
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
+            WifiTetherClientManager.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
