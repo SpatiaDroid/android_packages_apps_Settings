@@ -35,4 +35,10 @@
     <string name="wifi_hotspot_unblock_client_dialog_title">Unblock device</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">This device \"<xliff:g id="device_name">%1$s</xliff:g>\" will be able to connect to this hotspot</string>
     <string name="wifi_hotspot_client_manager_footer_text">No clients are currently available. Connected and blocked devices will be listed here when avaialable.</string>
+
+    <!-- Laboratory -->
+    <string name="laboratory_settings_preference_title">riceDroid Lab</string>
+    <string name="laboratory_settings_footer"> 1. In riceDroid Lab, you can try out experimental features.\n \n 2. Features in riceDroid Lab are updated time to time. Some functions will be kept and moved to turo turo fragment after they are proved to be stable, while others may be canceled. \n  \n 3. New features release in riceDroid Lab are in beta testing phase. There may be some bugs in this phase, so please use them with caution and proper discretion.</string>
+    <string name="laboratory_settings_warning_title">riceDroid Lab&#58; Warning!</string>
+    <string name="laboratory_settings_warning_message">New features release in riceDroid Lab are in beta testing phase. There may be some bugs in this phase, so please use them with caution and proper discretion.</string>
 </resources>
