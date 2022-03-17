@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/laboratory_settings_preference_title">
 
+    <com.rice.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pm_downgrade_allowed"
+        android:title="@string/laboratory_app_downgrade_title"
+        android:summary="@string/laboratory_app_downgrade_summary"
+        android:defaultValue="false"/>
+
     <com.android.settingslib.widget.FooterPreference
         android:title="@string/laboratory_settings_footer"
         android:selectable="false"

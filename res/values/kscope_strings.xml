@@ -41,4 +41,9 @@
     <string name="laboratory_settings_footer"> 1. In riceDroid Lab, you can try out experimental features.\n \n 2. Features in riceDroid Lab are updated time to time. Some functions will be kept and moved to turo turo fragment after they are proved to be stable, while others may be canceled. \n  \n 3. New features release in riceDroid Lab are in beta testing phase. There may be some bugs in this phase, so please use them with caution and proper discretion.</string>
     <string name="laboratory_settings_warning_title">riceDroid Lab&#58; Warning!</string>
     <string name="laboratory_settings_warning_message">New features release in riceDroid Lab are in beta testing phase. There may be some bugs in this phase, so please use them with caution and proper discretion.</string>
+
+    <!-- Laboratory - Application downgrade -->
+    <string name="laboratory_app_downgrade_title">Allow application downgrade</string>
+    <string name="laboratory_app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption.</string>
+
 </resources>
