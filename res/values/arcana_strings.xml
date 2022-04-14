@@ -36,4 +36,10 @@
     
     <string name="navbar_gesture_custom">Navigation Gestures Customizations</string>
     <string name="usercard_summary">Current active user, tap for more information</string>
+    
+     <!-- About page -->
+    <string name="battery">Battery</string>
+    <string name="display">Display</string>
+    <string name="storage">Storage</string>
+    <string name="chipset">Chipset</string>
 </resources>

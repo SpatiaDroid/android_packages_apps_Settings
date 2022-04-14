@@ -21,7 +21,7 @@
     android:title="@string/about_device_info"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- arcanaOS info -->
+    <!-- Project Arcana info -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="arcana_info"
         android:layout="@layout/arcana_info"
@@ -38,13 +38,32 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
+    <!-- Battery -->
     <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
+        android:key="battery"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/battery"
+        android:icon="@drawable/batteryab"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
+        android:selectable="true"/>
+        
+    <!-- Chipset -->
+    <Preference
+        android:key="chipset"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/chipset"
+        android:icon="@drawable/chipsetab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
+    <!-- Display -->
+    <Preference
+        android:key="display"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/display"
+        android:icon="@drawable/displayab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
 
     <!-- Security patch -->
     <Preference
@@ -65,15 +84,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build -->
+    <!-- Storage -->
     <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_build_number"
-        android:selectable="false"
+        android:key="storage"
         settings:layout="@layout/arc_card_about"
+        android:title="@string/storage"
+        android:icon="@drawable/storageab"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+        android:selectable="true"/>
 
 </PreferenceScreen>
