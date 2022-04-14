@@ -18,10 +18,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="power_usage_summary_screen"
     android:title="@string/power_usage_summary_title"
     settings:keywords="@string/keywords_battery">
-
+            
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="battery_illustration_desc"
+            android:order="-999"
+            android:title="@string/battery_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="battery_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/battery"/>
+                   
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
         android:title="@string/summary_placeholder"
@@ -46,7 +57,7 @@
         android:title="@string/advanced_battery_preference_title"
         settings:searchable="false" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rice.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_24_hrs_stats"
         android:title="@string/advanced_battery_preference_summary_with_hours"
         settings:searchable="false" />
@@ -84,6 +95,13 @@
         android:summary="@string/battery_percentage_description"
         android:title="@string/battery_percentage"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
+
+    <com.rice.settings.preferences.SystemSettingSwitchPreference
+        android:key="arcane_idle_manager"
+        android:title="@string/arcane_idle_manager_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/arcane_idle_manager_summary"
+        android:defaultValue="false" />
 
     <SwitchPreference
         android:key="fast_charging"

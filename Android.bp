@@ -51,7 +51,7 @@ android_library {
            "crDroidSettings/src/**/*.kt",
     ],
 
-    aaptflags: ["--extra-packages com.crdroid.settings"],
+    aaptflags: ["--extra-packages com.rice.settings"],
 
     resource_dirs: ["res",
                    "res-pixel",

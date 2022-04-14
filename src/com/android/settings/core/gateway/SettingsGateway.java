@@ -169,8 +169,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.crdroid.settings.crDroidSettingsLayout;
-import com.crdroid.settings.fragments.ui.SmartPixels;
+import com.rice.settings.riceDroidSettingsLayout;
+import com.rice.settings.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
 
@@ -328,7 +328,7 @@ public class SettingsGateway {
             NetworkSelectSettings.class.getName(),
             AlarmsAndRemindersDetails.class.getName(),
             MediaManagementAppsDetails.class.getName(),
-            crDroidSettingsLayout.class.getName(),
+            riceDroidSettingsLayout.class.getName(),
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
     };
@@ -371,7 +371,7 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
-            Settings.crDroidSettingsLayoutActivity.class.getName(),
+            Settings.riceDroidSettingsLayoutActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
     };

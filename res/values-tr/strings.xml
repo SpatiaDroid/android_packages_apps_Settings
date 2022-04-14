@@ -2817,7 +2817,7 @@
     <string name="battery_sugg_apps_info" msgid="4796917242296658454">"Uygulamayı durdur veya yüklemesini kaldır"</string>
     <string name="battery_sugg_apps_gps" msgid="7221335088647925110">"Pil tasarrufu modunu seçin"</string>
     <string name="battery_sugg_apps_settings" msgid="6527223370162382166">"Uygulama, pil kullanımını azaltmak için ayarlar önerebilir"</string>
-    <string name="battery_desc_users" msgid="1959428568888686847">"Kullanıcı tarafından harcanan pil miktarı"</string>
+    <string name="battery_desc_users" msgid="1959428568888686847">"Kullanıcı tarafından hricen pil miktarı"</string>
     <string name="battery_desc_unaccounted" msgid="1649497860893660763">"Çeşitli kaynakların güç tüketimi"</string>
     <string name="battery_msg_unaccounted" msgid="5647345548624995064">"Pil kullanımı, güç tüketimini yaklaşık olarak gösterir ve pili harcayan kaynakların hepsini hesaba dahil etmez. Çeşitli kaynaklar adı altında belirtilen değer, hesaplanan yaklaşık güç tüketimi ile pilin gerçek kullanımı arasındaki farktır."</string>
     <string name="battery_desc_overcounted" msgid="5982079150027267539">"Fazla hesaplanan güç kullanımı"</string>
@@ -4931,7 +4931,7 @@
     <string name="enterprise_privacy_device_access_category" msgid="140157499478630004">"Bu cihaza erişiminiz"</string>
     <string name="enterprise_privacy_enterprise_data" msgid="3963070078195245028">"E-posta ve takvim gibi iş hesabınızla ilişkilendirilen veriler"</string>
     <string name="enterprise_privacy_installed_packages" msgid="6707006112254572820">"Cihazınızdaki uygulamaların listesi"</string>
-    <string name="enterprise_privacy_usage_stats" msgid="6328506963853465534">"Her uygulamada harcanan zaman ve veri miktarı"</string>
+    <string name="enterprise_privacy_usage_stats" msgid="6328506963853465534">"Her uygulamada hricen zaman ve veri miktarı"</string>
     <string name="enterprise_privacy_network_logs" msgid="3081744541193695887">"En son ağ trafiği günlüğü"</string>
     <string name="enterprise_privacy_bug_reports" msgid="2635897583413134123">"En yeni hata raporu"</string>
     <string name="enterprise_privacy_security_logs" msgid="8494681624247959075">"En son güvenlik günlüğü"</string>

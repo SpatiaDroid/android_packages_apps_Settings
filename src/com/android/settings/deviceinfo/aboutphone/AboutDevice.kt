@@ -25,13 +25,14 @@ class AboutDevice : FrameLayout {
     init {
         inflate(context, R.layout.device_info, this)
         // ROM Version
-        val version = SystemProperties.get("ro.arcana.version")
-        val type = SystemProperties.get("ro.arcana.packagetype")
+        val version = SystemProperties.get("ro.rice.version")
+        val versionCode = SystemProperties.get("ro.rice.code")
+        val type = SystemProperties.get("ro.rice.packagetype")
 
-        findViewById<TextView>(R.id.romVersion).text = (if (type == "PIXEL") {
-            version + " " + context.getString(R.string.about_device_version_type_gapps)
+        findViewById<TextView>(R.id.romVersion).text = (if (type.contains("GAPPS")) {
+            version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_gapps)
         } else {
-            version + " " + context.getString(R.string.about_device_version_type_vanilla)
+            version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_vanilla)
         }).toString()
 
         // Device

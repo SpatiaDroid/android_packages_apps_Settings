@@ -53,7 +53,7 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.widget.LayoutPreference;
 
-import com.crdroid.settings.preferences.CustomDialogPref;
+import com.rice.settings.preferences.CustomDialogPref;
 
 import com.google.android.material.appbar.AppBarLayout;
 

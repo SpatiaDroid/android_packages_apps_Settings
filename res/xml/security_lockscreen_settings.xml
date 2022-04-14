@@ -29,7 +29,7 @@
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lock_screen_notif"/>
 
-        <com.crdroid.settings.preferences.SecureSettingListPreference
+        <com.rice.settings.preferences.SecureSettingListPreference
             android:key="face_unlock_method"
             android:title="@string/face_unlock_method_title"
             android:summary="%s"
@@ -57,7 +57,7 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rice.settings.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_pulse_enabled"
             android:title="@string/show_lockscreen_pulse_title"
             android:summary="@string/show_lockscreen_pulse_summary"

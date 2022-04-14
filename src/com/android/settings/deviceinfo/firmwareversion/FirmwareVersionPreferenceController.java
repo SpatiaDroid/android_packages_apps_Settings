@@ -27,7 +27,7 @@ import com.android.settings.core.BasePreferenceController;
 public class FirmwareVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    private static final String ARCANA_PLATFORM_RELEASE_CODENAME = "ro.arcana.platform_release_codename";
+    private static final String RICE_PLATFORM_RELEASE_CODENAME = "ro.rice.platform_release_codename";
 
     public FirmwareVersionPreferenceController(Context context, String key) {
         super(context, key);
@@ -40,7 +40,7 @@ public class FirmwareVersionPreferenceController extends BasePreferenceControlle
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(ARCANA_PLATFORM_RELEASE_CODENAME, 
+        return SystemProperties.get(RICE_PLATFORM_RELEASE_CODENAME, 
             Build.VERSION.RELEASE_OR_CODENAME);
     }
 }
