@@ -185,7 +185,6 @@ public abstract class DefaultSubscriptionController extends TelephonyBasePrefere
             subscriptionIds.add(Integer.toString(SubscriptionManager.INVALID_SUBSCRIPTION_ID));
         }
 
-        mPreference.setEnabled(true);
         mPreference.setEntries(displayNames.toArray(new CharSequence[0]));
         mPreference.setEntryValues(subscriptionIds.toArray(new CharSequence[0]));
 
