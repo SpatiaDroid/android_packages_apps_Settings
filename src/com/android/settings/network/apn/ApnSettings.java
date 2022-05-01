@@ -451,6 +451,9 @@ public class ApnSettings extends RestrictedSettingsFragment
     }
 
     private boolean restoreDefaultApn() {
+        // Callback of data connection change could be some noise during the stage of restore.
+        mTelephonyManager.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
+
         showDialog(DIALOG_RESTORE_DEFAULTAPN);
         mRestoreDefaultApnMode = true;
 
@@ -501,6 +504,7 @@ public class ApnSettings extends RestrictedSettingsFragment
                         getResources().getString(
                                 R.string.restore_default_apn_completed),
                         Toast.LENGTH_LONG).show();
+                    restartPhoneStateListener(mSubId);
                     break;
             }
         }
