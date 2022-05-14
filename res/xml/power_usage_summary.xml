@@ -27,11 +27,6 @@
             android:key="battery_illustration_desc"
             android:order="-999"
             android:title="@string/battery_illustration_description"/>
-            
-        <com.android.settingslib.widget.IllustrationPreference
-            android:key="battery_illustration"
-            android:order="-998"
-            app:lottie_rawRes="@raw/battery"/>
                    
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
