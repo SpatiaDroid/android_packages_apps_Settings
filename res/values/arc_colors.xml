@@ -4,7 +4,7 @@
     <color name="user_crd_bg">@*android:color/system_neutral1_0</color>
 
     <!-- Settings Homepage Stupidity -->
-    <color name="wave_homepage_icon_background">@*android:color/system_neutral1_50</color>
+    <color name="wave_homepage_icon_background">#f7f7f7</color>
     <color name="wave_homepage_icon_about_device_color">#6971c7</color>
     <color name="wave_homepage_icon_accounts_color">#f1c542</color>
     <color name="wave_homepage_icon_app_color">#6a41b1</color>
@@ -20,4 +20,7 @@
     <color name="wave_homepage_icon_system_dashboard_color">#989898</color>
     <color name="wave_homepage_icon_theme_color">#f17979</color>
     <color name="wave_homepage_icon_tools_color">#e99092</color>
+    <color name="wave_homepage_icon_google_color">#4285f4</color>
+    <color name="wave_homepage_icon_wellbeing_color">#f06292</color>
+    <color name="tl_preference_divider_bg">@*android:color/system_neutral1_50</color>
 </resources>

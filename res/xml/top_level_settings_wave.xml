@@ -22,16 +22,13 @@
     android:title="Settings">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/usercard"
+        android:layout="@layout/usercard_wave"
         android:fragment="com.android.settings.users.UserSettings"
         android:key="top_level_usercard"
         android:order="-170" />
-        
-    <com.android.settings.widget.HomepagePreference
-        android:title="@string/connectivity_category_title"
-        android:icon="@drawable/ic_network"
-        android:key="usercard_space"
-        android:selectable="false"
+
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_one"
         android:order="-165"/>
         
     <com.android.settings.widget.HomepagePreference
@@ -54,6 +51,10 @@
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_two"
+        android:order="-135"/>
+        
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.rice.settings.riceDroidSettingsLayout"
         android:icon="@drawable/ic_homepage_ricedroid"
@@ -81,7 +82,11 @@
         android:summary="@string/wallpaper_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_wallpaper"
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
-        
+       
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_three"
+        android:order="-105"/>
+         
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
         android:icon="@drawable/ic_wave_homepage_apps"
@@ -129,6 +134,10 @@
         android:summary="@string/sound_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_sound"/>
 
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_four"
+        android:order="-65"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/ic_homepage_accessibility"
@@ -168,6 +177,10 @@
         settings:highlightableMenuKey="@string/menu_key_location"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_five"
+        android:order="-25"/>
+
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_emergency"
         android:title="@string/emergency_settings_preference_title"
@@ -186,6 +199,10 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_accounts"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+
+    <com.android.settings.ui.TopLevelPreferenceDivider
+        android:key="top_level_divider_six"
+        android:order="-5"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"

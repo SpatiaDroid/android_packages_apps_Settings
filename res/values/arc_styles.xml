@@ -41,12 +41,14 @@
         <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
         <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
         <item name="android:textSize">50dp</item>
         <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
     </style>
 
     <style name="TextAppearance.riceInfoReleaseSummary">

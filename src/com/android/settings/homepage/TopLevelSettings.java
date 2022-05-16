@@ -220,6 +220,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
  	    String key = preference.getKey();
 
+	    if (mDashBoardStyle <= 1) {
 	    if (key.equals("top_level_usercard")){
 	        preference.setLayoutResource(R.layout.usercard);
 	    }
@@ -277,6 +278,62 @@ public class TopLevelSettings extends DashboardFragment implements
             if (key.equals("top_level_about_device")){
                 preference.setLayoutResource(R.layout.top_level_preference_bottom);
             }
+            } else if (mDashBoardStyle >= 2) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_wave);
+	    }
+	    if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_wave);
+	    }
+            if (key.equals("top_level_connected_devices")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_rice")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_wallpaper")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_battery")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_display")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_sound")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_apps")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_storage")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_location")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_accessibility")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_security")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_privacy")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_emergency")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+            if (key.equals("top_level_about_device")){
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+            }
+         }
 
 	    if (mDashBoardStyle == 0) {
             if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
@@ -318,12 +375,12 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.top_level_preference_wellbeing_wave);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
-            }
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+              }
             } else if (mDashBoardStyle == 3) {
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
-            }
+                preference.setLayoutResource(R.layout.top_level_preference_wave);
+              }
             }
 	}
     }
