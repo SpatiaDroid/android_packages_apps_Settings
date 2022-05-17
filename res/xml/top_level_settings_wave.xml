@@ -50,10 +50,6 @@
         android:summary="@string/connected_devices_dashboard_default_summary"
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
-
-    <com.android.settings.ui.TopLevelPreferenceDivider
-        android:key="top_level_divider_two"
-        android:order="-135"/>
         
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.rice.settings.riceDroidSettingsLayout"
@@ -82,11 +78,7 @@
         android:summary="@string/wallpaper_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_wallpaper"
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
-       
-    <com.android.settings.ui.TopLevelPreferenceDivider
-        android:key="top_level_divider_three"
-        android:order="-105"/>
-         
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
         android:icon="@drawable/ic_wave_homepage_apps"
@@ -134,10 +126,6 @@
         android:summary="@string/sound_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_sound"/>
 
-    <com.android.settings.ui.TopLevelPreferenceDivider
-        android:key="top_level_divider_four"
-        android:order="-65"/>
-
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/ic_homepage_accessibility"
@@ -177,10 +165,6 @@
         settings:highlightableMenuKey="@string/menu_key_location"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
-    <com.android.settings.ui.TopLevelPreferenceDivider
-        android:key="top_level_divider_five"
-        android:order="-25"/>
-
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_emergency"
         android:title="@string/emergency_settings_preference_title"
@@ -199,10 +183,6 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_accounts"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
-
-    <com.android.settings.ui.TopLevelPreferenceDivider
-        android:key="top_level_divider_six"
-        android:order="-5"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"

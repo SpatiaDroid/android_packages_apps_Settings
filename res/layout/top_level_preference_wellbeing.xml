@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="@dimen/top_pref_start"
         app:layout_constraintStart_toEndOf="@+id/wb_pref_icon">
 
         <TextView

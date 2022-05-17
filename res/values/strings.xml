@@ -2836,7 +2836,7 @@
     <string name="carrier">Carrier</string>
     <!-- Sound and alerts settings -->
     <skip/>
-    <string name="display_settings_title">Display</string>
+    <string name="display_settings_title">Display &amp; brightness</string>
     <!-- Sound settings screen heading -->
     <string name="sound_settings">Sound &amp; Vibration</string>
     <!-- DO NOT TRANSLATE Summary placeholder -->
@@ -2948,7 +2948,7 @@
 
     <!-- Display settings --><skip/>
     <!-- Sound & display settings screen, section header for settings related to display -->
-    <string name="display_settings">Display</string>
+    <string name="display_settings">Display &amp; brightness</string>
     <!-- Sound & display settings screen, accelerometer-based rotation check box label -->
     <string name="accelerometer_title">Auto-rotate screen</string>
     <!-- Sound & display settings screen, locked rotation check box label [CHAR LIMIT=30] -->
