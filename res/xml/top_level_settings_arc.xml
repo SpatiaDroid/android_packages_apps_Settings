@@ -27,10 +27,6 @@
         android:key="top_level_usercard"
         android:order="-170" />
         
-    <com.android.settings.ui.TopLevelPreferenceDividerRui
-        android:key="top_level_divider_one_rui"
-        android:order="-165"/>
-        
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/op_ic_homepage_network_settings"
