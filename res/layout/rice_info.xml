@@ -41,6 +41,12 @@
             android:contentDescription="@null"
             android:orientation="vertical" />
 
+       <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ricelogo" />
+
     </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
