@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -52,46 +49,26 @@
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-        app:elevation="0dp"
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:background="?android:attr/colorPrimary"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-    <com.google.android.material.appbar.CollapsingToolbarLayout
-        android:id="@+id/collapsing_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:minHeight="?android:attr/actionBarSize"
-        app:contentScrim="?android:attr/colorPrimary"
-        app:statusBarScrim="?android:attr/colorPrimary"
-        app:expandedTitleMarginStart="24dp"
-        app:expandedTitleMarginTop="-75dp"
-        app:collapsedTitleGravity="start|center_vertical"
-        app:expandedTitleGravity="start"
-        app:expandedTitleTextAppearance="@style/ExpandedAppBar"
-        app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+        android:touchscreenBlocksFocus="false"
+        android:keyboardNavigationCluster="false">
+        <LinearLayout
+            android:id="@+id/app_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
 
-    <Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize" />
-    <LinearLayout
-        android:id="@+id/common_con"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="10dp"
-        android:padding="4dp"
-    	android:gravity="center"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal">
-    <Toolbar
-        android:id="@+id/search_action_bar"
-        android:layout_width="54dp"
-        android:navigationIcon="@drawable/ic_homepage_search"
-        android:layout_height="34dp"
-        android:background="@android:color/transparent"/>
-    </LinearLayout>
-    </com.google.android.material.appbar.CollapsingToolbarLayout>
-</com.google.android.material.appbar.AppBarLayout>
+            <include
+                android:id="@+id/homepage_app_bar_regular_phone_view"
+                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
+
+            <include
+                android:id="@+id/homepage_app_bar_two_pane_view"
+                layout="@layout/settings_homepage_app_bar_two_pane_layout"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -805,9 +805,15 @@ public class TopLevelSettings extends DashboardFragment implements
     private void onUserCard() {
         final LayoutPreference headerPreference =
                 (LayoutPreference) getPreferenceScreen().findPreference(KEY_USER_CARD);
+        final Activity context = getActivity();
+        final boolean DisableUserCard = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.DISABLE_USERCARD, 0, UserHandle.USER_CURRENT) != 0;
+        if (DisableUserCard && headerPreference != null) {
+        getPreferenceScreen().removePreference(headerPreference);
+        } else {
+        if (headerPreference != null) {
         final View userCard = headerPreference.findViewById(R.id.entity_header);
         final TextView textview = headerPreference.findViewById(R.id.summary);
-        final Activity context = getActivity();
         final Bundle bundle = getArguments();
         final EntityHeaderController controller = EntityHeaderController
                 .newInstance(context, this, userCard)
@@ -836,6 +842,8 @@ public class TopLevelSettings extends DashboardFragment implements
         }
 
         controller.done(context, true /* rebindActions */);
+    }
+    }
     }
 
     @Override
