@@ -27,7 +27,7 @@
         android:key="top_level_usercard"
         android:order="-170" />
         
-    <com.android.settings.ui.TopLevelPreferenceDividerRui
+    <com.android.settings.ui.TopLevelPreferenceDivider
         android:key="top_level_divider_one_rui"
         android:order="-165"/>
         

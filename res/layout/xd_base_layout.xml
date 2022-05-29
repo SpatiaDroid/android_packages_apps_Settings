@@ -48,7 +48,7 @@
           app:forceApplySystemWindowInsetTop="true"
           app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
           app:maxLines="2"
-          app:scrimAnimationDuration="50"
+          app:scrimAnimationDuration="100"
           app:scrimVisibleHeightTrigger="@dimen/xd_toolbar_scrim"
           app:statusBarScrim="@null"
           app:titleCollapseMode="fade"
@@ -75,8 +75,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:layout_marginStart="@dimen/xd_pref_card_horizontal_padding"
-            android:layout_marginEnd="@dimen/xd_pref_card_horizontal_padding"
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="@dimen/xd_pref_card_radius"
             app:cardElevation="0dp">
@@ -84,9 +82,7 @@
           <FrameLayout
             android:id="@id/content_frame"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/xd_pref_card_horizontal_padding-negative"
-            android:layout_marginEnd="@dimen/xd_pref_card_horizontal_padding-negative"/>
+            android:layout_height="wrap_content"/>
 
         </androidx.cardview.widget.CardView>
     </FrameLayout>
