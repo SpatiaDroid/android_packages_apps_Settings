@@ -88,7 +88,7 @@
     <Toolbar
         android:id="@+id/search_action_bar"
         android:layout_width="54dp"
-        android:navigationIcon="@drawable/ic_homepage_search"
+        android:navigationIcon="@drawable/ic_homepage_search_oos"
         android:layout_height="34dp"
         android:background="@android:color/transparent"/>
     </LinearLayout>
