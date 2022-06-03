@@ -263,10 +263,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Context context = getApplicationContext();
-        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
-                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
-
+	final boolean useStockLayout = getuseStockLayout();
         if (useStockLayout) {
         final boolean isTwoPane = ActivityEmbeddingUtils.isTwoPaneResolution(this);
         if (mIsTwoPaneLastTime != isTwoPane) {
@@ -492,7 +489,17 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onResume() {
         super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+    	final boolean useStockLayout = getuseStockLayout();
+        if (useStockLayout) {
+            avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        }
     }
+   
+    private boolean getuseStockLayout() { 
+        final Context context = getApplicationContext();
+        return Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0,
+                UserHandle.USER_CURRENT) != 0;
+   }
 
 }
