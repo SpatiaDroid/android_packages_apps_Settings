@@ -809,9 +809,9 @@ public class TopLevelSettings extends DashboardFragment implements
         final LayoutPreference headerPreference =
                 (LayoutPreference) getPreferenceScreen().findPreference(KEY_USER_CARD);
         final Activity context = getActivity();
-        final boolean DisableUserCard = Settings.System.getIntForUser(context.getContentResolver(),
-                Settings.System.DISABLE_USERCARD, 0, UserHandle.USER_CURRENT) != 0;
-        if (DisableUserCard && headerPreference != null) {
+        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
+        if (useStockLayout && headerPreference != null) {
         getPreferenceScreen().removePreference(headerPreference);
         } else {
         if (headerPreference != null) {
