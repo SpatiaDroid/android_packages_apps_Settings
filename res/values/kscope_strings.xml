@@ -62,4 +62,9 @@
     <string name="laboratory_skiavk_title">Use skia vulkan for hwui rendering</string>
     <string name="laboratory_skiavk_summary">This may offer better performance but worse compatibility especially with outdated applications.(Requires reboot to take effect)</string>
 
+    <!-- Reset auto brightness adjustment -->
+    <string name="reset_auto_brightness_adjustment_title">Reset preference</string>
+    <string name="reset_auto_brightness_adjustment_summary">Let the system forget your brightness preference and reset it to the default one</string>
+    <string name="reset_auto_brightness_adjustment_done">Auto brightness preference has been reset</string>
+
 </resources>
