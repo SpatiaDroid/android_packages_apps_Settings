@@ -29,7 +29,7 @@ class AboutDevice : FrameLayout {
         val versionCode = SystemProperties.get("ro.rice.code")
         val type = SystemProperties.get("ro.rice.packagetype")
 
-        findViewById<TextView>(R.id.romVersion).text = (if (type.contains("GAPPS")) {
+        findViewById<TextView>(R.id.romVersion).text = (if (type.contains("PIXEL")) {
             version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_gapps)
         } else {
             version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_vanilla)

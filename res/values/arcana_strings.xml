@@ -46,7 +46,7 @@
 
     <!-- About phone cards -->
     <string name="about_device_nearby">The device name can and will be seen by the nearby devices.</string>
-    <string name="about_device_version_type_gapps">Gapps</string>
+    <string name="about_device_version_type_gapps">Pixel</string>
     <string name="about_device_version_type_vanilla">Vanilla</string>
     <string name="version">Rice version</string>
     <string name="edit">Edit</string>
