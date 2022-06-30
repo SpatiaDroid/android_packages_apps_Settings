@@ -36,4 +36,33 @@
         <item>900000</item>
         <item>1800000</item>
     </string-array>
+    
+     <string-array name="dashboard_morning">
+          <item>@string/dashboard_morning1</item>
+          <item>@string/dashboard_morning2</item>
+          <item>@string/dashboard_morning3</item>
+          <item>@string/dashboard_morning4</item>
+     </string-array>
+     <string-array name="dashboard_midnight">
+          <item>@string/dashboard_midnight1</item>
+          <item>@string/dashboard_midnight2</item>
+     </string-array>
+     <string-array name="dashboard_night">
+          <item>@string/dashboard_night1</item>
+          <item>@string/dashboard_night2</item>
+          <item>@string/dashboard_night3</item>
+     </string-array>
+     <string-array name="dashboard_noon">
+          <item>@string/dashboard_noon1</item>
+          <item>@string/dashboard_noon2</item>
+          <item>@string/dashboard_noon3</item>
+     </string-array>
+     <string-array name="dashboard_random">
+          <item>@string/dashboard_random1</item>
+          <item>@string/dashboard_random2</item>
+          <item>@string/dashboard_random3</item>
+          <item>@string/dashboard_random4</item>
+          <item>@string/dashboard_random5</item>
+          <item>@string/dashboard_random6</item>
+     </string-array>
 </resources>
