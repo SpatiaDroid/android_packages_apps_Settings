@@ -57,7 +57,7 @@
         android:selectable="true" >
             <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://www.youtube.com/watch?v=JdHgobd9TrM" />
+               android:data="https://www.youtube.com/watch?v=f6YDKF0LVWw" />
       </Preference>
 
     <!-- rice_release_type_title -->
