@@ -103,7 +103,8 @@
     <string name="build_is_community_summary_oopsie">Psst! please tell the builder that he/she forgot to add RICE build flags!</string>
 
     <!-- App lock -->
-    <string name="app_lock_title">App lock</string>
+    <string name="app_lock_title">Application security</string>
+    <string name="apps_security_summary">Secure/Hide applications</string>
     <string name="app_lock_summary_singular">1 application is protected</string>
     <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g> applications are protected</string>
     <string name="app_lock_authentication_dialog_title">Unlock</string>
