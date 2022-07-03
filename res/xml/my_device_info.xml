@@ -26,12 +26,12 @@
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
         settings:isPreferenceVisible="true"/>
-    
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
         android:title="@string/my_device_info_basic_info_category_title">
-
+        
         <!-- Account name -->
         <Preference
             android:key="branded_account"

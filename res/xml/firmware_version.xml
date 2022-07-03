@@ -21,12 +21,21 @@
     android:title="@string/about_device_info"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Project Arcana info -->
+    <!-- riceDroid info -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="rice_info"
         android:layout="@layout/rice_info"
         android:selectable="false" />
 
+    <Preference
+        android:key="rom_build_status"
+        settings:layout="@layout/rice_card_build_status"
+        android:title="@string/build_status"
+        android:summary="@string/build_status_summary_placeholder"
+        android:icon="@drawable/ic_rice_build_status"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
     <!-- device_title -->
     <Preference
         android:key="rice_device"
@@ -36,7 +45,7 @@
         settings:enableCopying="true"
         android:selectable="true"/>
         
-    <!-- Arcana Codename -->
+    <!-- riceDroid Codename -->
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
@@ -60,24 +69,6 @@
                android:data="https://www.youtube.com/watch?v=f6YDKF0LVWw" />
       </Preference>
 
-    <!-- rice_release_type_title -->
-    <Preference
-        android:key="rice_releasetype"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/rice_release_type_title"
-        android:icon="@drawable/ic_legal"
-        settings:enableCopying="true"
-        android:selectable="true"/>
-
-    <!-- maintainer_title -->
-    <Preference
-        android:key="rice_maintainer"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/rice_maintainer_title"
-        android:icon="@drawable/ic_about_team"
-        settings:enableCopying="true"
-        android:selectable="true"/>
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"
@@ -86,6 +77,15 @@
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+    <!-- Build date -->
+    <Preference
+        android:key="rice_build_version"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/rice_build_version_title"
+        android:icon="@drawable/ic_legal"
+        settings:enableCopying="true"
+        android:selectable="true"/>
 
     <!-- Kernel -->
     <Preference

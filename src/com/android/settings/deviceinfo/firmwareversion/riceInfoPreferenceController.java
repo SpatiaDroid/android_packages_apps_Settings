@@ -33,17 +33,19 @@ import com.android.settingslib.widget.LayoutPreference;
 public class riceInfoPreferenceController extends AbstractPreferenceController {
 
     private static final String KEY_RICE_INFO = "rice_info";
-    private static final String KEY_RICE_MAINTAINER = "rice_maintainer";
-    private static final String KEY_RICE_RELEASE = "rice_releasetype";
     private static final String KEY_RICE_DEVICE = "rice_device";
     private static final String KEY_RICE_VERSION = "rice_version";
-
+    private static final String KEY_BUILD_STATUS = "rom_build_status";
+    private static final String KEY_BUILD_VERSION = "rice_build_version";
+    
     private static final String PROP_RICE_VERSION = "ro.rice.version";
     private static final String PROP_RICE_VERSION_CODE = "ro.rice.code";
     private static final String PROP_RICE_RELEASETYPE = "ro.rice.releasetype";
     private static final String PROP_RICE_MAINTAINER = "ro.rice.maintainer";
     private static final String PROP_RICE_DEVICE = "ro.rice.device";
     private static final String PROP_RICE_BUILD_TYPE = "ro.rice.packagetype";
+    private static final String PROP_RICE_BUILD_VERSION = "ro.rice.build.version";
+
 
     public riceInfoPreferenceController(Context context) {
         super(context);
@@ -57,6 +59,13 @@ public class riceInfoPreferenceController extends AbstractPreferenceController {
         return device;
     }
 
+    private String getriceBuildVersion() {
+        final String buildVer = SystemProperties.get(PROP_RICE_BUILD_VERSION,
+                this.mContext.getString(R.string.device_info_default));;
+
+        return buildVer;
+    }
+    
     private String getriceVersion() {
         final String version = SystemProperties.get(PROP_RICE_VERSION,
                 this.mContext.getString(R.string.device_info_default));
@@ -71,27 +80,70 @@ public class riceInfoPreferenceController extends AbstractPreferenceController {
     private String getriceReleaseType() {
         final String releaseType = SystemProperties.get(PROP_RICE_RELEASETYPE,
                 this.mContext.getString(R.string.device_info_default));
-
+	
         return releaseType.substring(0, 1).toUpperCase() +
                  releaseType.substring(1).toLowerCase();
+    }
+    
+    private String getricebuildStatus() {
+	final String buildType = SystemProperties.get(PROP_RICE_RELEASETYPE,
+                this.mContext.getString(R.string.device_info_default));
+        final String isOfficial = this.mContext.getString(R.string.build_is_official_title);
+	final String isCommunity = this.mContext.getString(R.string.build_is_community_title);
+	
+	if (buildType.equalsIgnoreCase("Official")) {
+		return isOfficial;
+	} else {
+		return isCommunity;
+	}
+    }
+
+    private String getriceMaintainer() {
+	final String riceMaintainer = SystemProperties.get(PROP_RICE_MAINTAINER,
+                this.mContext.getString(R.string.device_info_default));
+	final String buildType = SystemProperties.get(PROP_RICE_RELEASETYPE,
+                this.mContext.getString(R.string.device_info_default));
+        final String isOffFine = this.mContext.getString(R.string.build_is_official_summary, riceMaintainer);
+	final String isOffMiss = this.mContext.getString(R.string.build_is_official_summary_oopsie);
+	final String isCommMiss = this.mContext.getString(R.string.build_is_community_summary_oopsie);
+	final String isCommFine = this.mContext.getString(R.string.build_is_community_summary, riceMaintainer);
+	
+	if (buildType.equalsIgnoreCase("Official") && !riceMaintainer.equals("")) {
+		return isOffFine;
+	} else if (buildType.equalsIgnoreCase("Official") && riceMaintainer.equals("")) {
+		return isOffMiss;
+	} else if (buildType.equalsIgnoreCase("Community") && riceMaintainer.equals("")) {
+		return isCommMiss;
+	} else {
+		return isCommFine;
+	}
     }
 
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         final Preference arcVerPref = screen.findPreference(KEY_RICE_VERSION);
-        final Preference arcMainPref = screen.findPreference(KEY_RICE_MAINTAINER);
-        final Preference arcRelPref = screen.findPreference(KEY_RICE_RELEASE);
         final Preference arcDevPref = screen.findPreference(KEY_RICE_DEVICE);
+        final Preference buildStatusPref = screen.findPreference(KEY_BUILD_STATUS);
+        final Preference buildVerPref = screen.findPreference(KEY_BUILD_VERSION);
         final String riceVersion = getriceVersion();
         final String riceDevice = getDeviceName();
         final String riceReleaseType = getriceReleaseType();
-        final String riceMaintainer = SystemProperties.get(PROP_RICE_MAINTAINER,
+        final String riceMaintainer = getriceMaintainer();
+	final String buildStatus = getricebuildStatus();
+	final String buildVer = getriceBuildVersion();
+	final String isOfficial = SystemProperties.get(PROP_RICE_RELEASETYPE,
                 this.mContext.getString(R.string.device_info_default));
+	buildStatusPref.setTitle(buildStatus);
+	buildStatusPref.setSummary(riceMaintainer);
+	buildVerPref.setSummary(buildVer);
         arcVerPref.setSummary(riceVersion);
         arcDevPref.setSummary(riceDevice);
-        arcRelPref.setSummary(riceReleaseType);
-        arcMainPref.setSummary(riceMaintainer);
+	if (isOfficial.equalsIgnoreCase("Official")) {
+		 buildStatusPref.setIcon(R.drawable.verified);
+	} else {
+		buildStatusPref.setIcon(R.drawable.unverified);
+	}
     }
 
     @Override
