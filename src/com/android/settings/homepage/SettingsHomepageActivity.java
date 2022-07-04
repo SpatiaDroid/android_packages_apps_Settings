@@ -193,28 +193,35 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         	textView.setText(morningMsg[morning]);
                 break;
 
-            case 18: case 19: case 20: case 21: case 22: case 23:
+            case 18: case 19: case 20: 
+        	String[] msgearlyNight = getResources().getStringArray(R.array.dashboard_early_night);
+        	Random genmsgeNight = new Random();
+        	int eNight = genmsgeNight.nextInt(msgearlyNight.length-1);
+        	textView.setText(msgearlyNight[eNight]);
+                break;
+                
+            case 21: case 22: case 23: case 0: 
         	String[] msgNight = getResources().getStringArray(R.array.dashboard_night);
         	Random genmsgNight = new Random();
         	int night = genmsgNight.nextInt(msgNight.length-1);
         	textView.setText(msgNight[night]);
                 break;
 
-             case 15: case 16: case 17:
+             case 16: case 17:
         	String[] msgNoon = getResources().getStringArray(R.array.dashboard_noon);
         	Random genmsgNoon = new Random();
         	int noon = genmsgNoon.nextInt(msgNoon.length-1);
         	textView.setText(msgNoon[noon]);
                 break;
 
-            case 0: case 1: case 2: case 3: case 4:
+            case 1: case 2: case 3: case 4:
         	String[] msgMN = getResources().getStringArray(R.array.dashboard_midnight);
         	Random genmsgMN = new Random();
         	int mn = genmsgMN.nextInt(msgMN.length-1);
         	textView.setText(msgMN[mn]);
                 break;
                 
-            case 11: case 12: case 13: case 14: 
+            case 11: case 12: case 13: case 14: case 15:
         	String[] msgRD = getResources().getStringArray(R.array.dashboard_random);
         	Random genmsgRD = new Random();
         	int randomm = genmsgRD.nextInt(msgRD.length-1);
