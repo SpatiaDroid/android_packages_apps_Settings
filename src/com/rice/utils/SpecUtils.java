@@ -35,8 +35,8 @@ import java.io.File;
 import com.android.settings.R;
 
 public class SpecUtils {
-    private static final String CPU_MODEL_PROPERTY = "ro.specs.cpu";
-    private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.board.platform";
+    private static final String CPU_MODEL_PROPERTY = "ro.board.platform";
+    private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.product.board";
 
     public static String getTotalInternalMemorySize() {
         File path = Environment.getDataDirectory();
@@ -78,12 +78,25 @@ public class SpecUtils {
     public static String getProcessorModel() {
         String cpuModel = SystemProperties.get(CPU_MODEL_PROPERTY);
         String cpuModelFallback = SystemProperties.get(FALLBACK_CPU_MODEL_PROPERTY);
-        if (!cpuModel.isEmpty())
-            return cpuModel;
-        else if (!cpuModelFallback.isEmpty())
+       if (cpuModel.equalsIgnoreCase("kona")) {
+            return "SM8250";
+       } else if (cpuModel.equalsIgnoreCase("lahaina")) {
+            return "SM8350";
+       } else if (cpuModel.equalsIgnoreCase("trinket")) {
+            return "SM6125";
+       } else if (cpuModel.equalsIgnoreCase("msmnile")) {
+            return "SM8150";
+       } else if (cpuModel.equalsIgnoreCase("lito")) {
+            return "SM7250";
+       } else if (cpuModel.equalsIgnoreCase("atoll")) {
+            return "SM6250";
+       } else if (cpuModel.equalsIgnoreCase("holi")) {
+            return "SM4350";
+       } else if (cpuModel.equalsIgnoreCase("msm8937")) {
+            return "SDM439";
+       } else {
             return cpuModelFallback;
-        else
-            return "unknown";
+       }
     }
 
     public static String getScreenRes(Context context) {
