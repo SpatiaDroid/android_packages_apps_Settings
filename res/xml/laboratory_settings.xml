@@ -36,7 +36,7 @@
         android:key="skiavk"
         android:title="@string/laboratory_skiavk_title"
         android:summary="@string/laboratory_skiavk_summary"
-        settings:controller="com.android.settings.laboratory.SkiavkPreferenceController"/>
+        settings:controller="com.android.settings.laboratory.SkiaglPreferenceController"/>
 
     <com.rice.settings.preferences.GlobalSettingSwitchPreference
         android:key="strict_standby_policy"
