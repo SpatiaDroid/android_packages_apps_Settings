@@ -52,6 +52,6 @@
 
     <!-- Laboratory - Skiavk -->
     <string name="laboratory_skiavk_title">Use skia vulkan for hwui rendering</string>
-    <string name="laboratory_skiavk_summary">This may offer better performance but worse compatibility especially with outdated applications.</string>
+    <string name="laboratory_skiavk_summary">This may offer better performance but worse compatibility especially with outdated applications.(Requires reboot to take effect)</string>
 
 </resources>
