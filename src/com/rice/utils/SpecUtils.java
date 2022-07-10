@@ -35,7 +35,7 @@ import java.io.File;
 import com.android.settings.R;
 
 public class SpecUtils {
-    private static final String CPU_MODEL_PROPERTY = "ro.specs.cpu";
+    private static final String CPU_MODEL_PROPERTY = "ro.rice.chipset";
     private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.board.platform";
 
     public static String getTotalInternalMemorySize() {
