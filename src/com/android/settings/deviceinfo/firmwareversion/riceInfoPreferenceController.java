@@ -42,7 +42,7 @@ public class riceInfoPreferenceController extends AbstractPreferenceController {
     private static final String PROP_RICE_VERSION_CODE = "ro.rice.code";
     private static final String PROP_RICE_RELEASETYPE = "ro.rice.releasetype";
     private static final String PROP_RICE_MAINTAINER = "ro.rice.maintainer";
-    private static final String PROP_RICE_DEVICE = "ro.rice.device";
+    private static final String PROP_RICE_DEVICE = "ro.product.product.device";
     private static final String PROP_RICE_BUILD_TYPE = "ro.rice.packagetype";
     private static final String PROP_RICE_BUILD_VERSION = "ro.rice.build.version";
 
