@@ -5,7 +5,7 @@
     <color name="user_crd_bg">@*android:color/system_neutral1_0</color>
 
     <!-- Settings Homepage Stupidity -->
-    <color name="wave_homepage_icon_background">#f7f7f7</color>
+    <color name="wave_homepage_icon_background">@*android:color/system_neutral1_50</color>
     <color name="wave_homepage_icon_about_device_color">#6971c7</color>
     <color name="wave_homepage_icon_accounts_color">#f1c542</color>
     <color name="wave_homepage_icon_app_color">#6a41b1</color>
