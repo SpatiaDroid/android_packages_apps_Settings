@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 RiceDroid
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+   <!-- riceDroid versioning -->
+    <string name="rice_version_title">RiceDroid Sürümü</string>
+    <string name="rice_device_title">Cihaz</string>
+    <string name="rice_build_version_title">Yapı Sürümü</string>
+
+    <string name="wellbeing_title">Dijital Denge</string>
+    <string name="gesture_illustration_description">Cihazınızı kolayca kontrol edin.</string>
+    <string name="connected_setting_description">Cihazınızın bağlantılarını kontrol edin.</string>
+    <string name="accessibility_illustration_description">Özelliklere herkesin erişmesinin kolay yolu.</string>
+    <string name="account_illustration_description">Şifrelerinizi ve hesaplarınızı yönetin.</string>
+    <string name="display_illustration_description">Parlaklık, renkler vb. gibi görüntü özelleştirmelerini ayarlayın.</string>
+    <string name="wifi_illustration_description">Ağ bağlantılarını, DNS sağlayıcıları, hotspot vb. yönetin.</string>
+    <string name="sec_illustration_description">Cihazınızın gizliliğini sağlayın ve koruyun.</string>
+    <string name="sound_illustration_description">Cihaz zil sesi, diğer sesler ve kullanıcı arayüzü seslerini ayarlayın.</string>
+    <string name="privacy_illustration_description">Gizlilik erişiminizi yönetin/cihazınız için bilgiler.</string>
+    <string name="system_illustration_description">Sistem dilini, tarihi, saati, hareketleri ve daha fazlasını ayarlayın.</string>
+    <string name="apps_illustration_description">Yüklü uygulamaları, varsayılan uygulamaları, özel uygulama erişimini yönetin, uygulamaları etkinleştirin veya devre dışı bırakın.</string>
+	<string name="battery_illustration_description">Pil sağlığını ve bilgisini gözlemleyin, pil kullanımını geliştirin.</string>
+    <string name="connectivity_category_title">bağlanabilirlik</string>
+
+    <string name="navbar_gesture_custom">Gezinme hareketleri özelleştirmeleri</string>
+    <string name="usercard_summary">Yetkili riceDroid kullanıcısı</string>
+
+     <!-- About page -->
+    <string name="battery">Pil</string>
+    <string name="display">Ekran</string>
+    <string name="storage">Bellek</string>
+    <string name="chipset">İşlemci</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">Cihaz adı yakın cihazlar tarafından görülebilecek.</string>
+    <string name="about_device_version_type_gapps">Pixel</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">Rice sürümü</string>
+    <string name="edit">Düzenle</string>
+    <string name="device_name">Cihaz adı</string>
+    <string name="about_us_info_category_title">Hakkımızda</string>
+    <string name="rice_revision">RiceDroid Revizyonu</string>
+
+    <!-- Arcane Idle Manager -->
+    <string name="arcane_idle_manager_title">riceDroid Bekleme Yöneticisi</string>
+    <string name="arcane_idle_manager_summary">Cihaz boştayken önemli olmayan tüm arka plan işlemlerini durdur.</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Şarjdayken daima açık ekran</string>
+    <string name="doze_on_charge_summary">Şarj olurken daima açık ekranı göster</string>
+
+   <!-- Doze on double tap -->
+    <string name="double_tap_title">Çift dokunma</string>
+    <string name="doze_double_tap_title">Telefonu kontrol etmek için çift dokun</string>
+    <string name="doze_double_tap_summary">Çift dokunmayla bildirimleri göster</string>
+
+    <string name="dashboard_morning1">Günaydın!</string>
+    <string name="dashboard_morning2">Güneş doğdu!</string>
+    <string name="dashboard_morning3">Güzel bir sabah..</string>
+    <string name="dashboard_morning4">İyi günler..</string>
+    <string name="dashboard_morning5">Yeni bir gün..</string>
+    <string name="dashboard_noon1">İyi günler.</string>
+    <string name="dashboard_noon2">Gün batımının tadını çıkar.</string>
+    <string name="dashboard_noon3">Eve hoş geldin..</string>
+    <string name="dashboard_noon4">Günün tadını çıkar!</string>
+    <string name="dashboard_noon5">Hoşgeldin..</string>
+    <string name="dashboard_early_night1">İyi akşamlar..</string>
+    <string name="dashboard_early_night2">Akşam yemeği vakti!</string>
+    <string name="dashboard_night3">Tatlı rüyalar!</string>
+    <string name="dashboard_night4">Uyku zamanı..</string>
+    <string name="dashboard_night5">İyi geceler!</string>
+    <string name="dashboard_midnight1">Artık çok geç oldu..</string>
+    <string name="dashboard_midnight2">Yardıma ihtiyacın var..</string>
+    <string name="dashboard_midnight3">Bİraz yardım al..</string>
+    <string name="dashboard_midnight4">Biraz dinlen artık..</string>
+    <string name="dashboard_midnight5">Geç uyumak senin için pek iyi değil..</string>
+    <string name="dashboard_random1">Biraz eğlence ister misin?</string>
+    <string name="dashboard_random2">Arama çubuğu..</string>
+    <string name="dashboard_random3">Merhaba sahip!</string>
+    <string name="dashboard_random4">Ayarlar</string>
+    <string name="dashboard_random5">Merhaba kullanıcı!</string>
+    <string name="dashboard_random6">Nasılsın?</string>
+
+    <string name="build_status">Yapı Durumu</string>
+    <string name="build_status_summary_placeholder">Nasılsın</string>
+    <string name="build_is_official_title">Cihaz resmi olarak destekleniyor!</string>
+    <string name="build_is_community_title">Cihaz resmi olarak desteklenmiyor!</string>
+    <string name="build_is_official_summary">Built with love by %s</string>
+    <string name="build_is_official_summary_oopsie">ama, bu sürümü kim yaptı?</string>
+    <string name="build_is_community_summary">Unofficial by %s</string>
+    <string name="build_is_community_summary_oopsie">Psst! Lütfen yapana söyleyin Rice yapım etiketlerini eklemeyi unutmuş!</string>
+
+    <!-- App lock -->
+    <string name="app_lock_title">Uygulama kilidi</string>
+    <string name="apps_security_summary">Uygulamaları Koru/Gizle</string>
+    <string name="app_lock_summary_singular">1 uygulama kilitlendi</string>
+    <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g> uygulama kilitlendi</string>
+    <string name="app_lock_authentication_dialog_title">Kilidi aç</string>
+    <string name="enable_debugging">Hata ayıklamaya izin ver</string>
+    <string name="disable_debugging">Hata ayıklamayı devre dışı bırak</string>
+    <string name="app_lock_packages_title">Korunan uygulamalar</string>
+    <string name="app_lock_packages_summary">Biyometri veya cihaz kimlik bilgileri ile korunacak uygulamaları seçin</string>
+    <string name="app_lock_timeout_title">Otomatik kilit zaman aşımı</string>
+    <string name="app_lock_timeout_summary">Kilidi açılan bir uygulamanın arka planda ne kadar süre sonra kilitleneceği</string>
+    <string name="app_lock_notifications_title">Bildirimleri daralt</string>
+    <string name="app_lock_notifications_summary">
+          Seçilen uygulamalar kilitlendiğinde bildirim içeriği gizlenecek ve daraltılacak.
+          Bildirim pencereleri otomatik olarak devre dışı bırakılacak.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Önce bir uygulama kilitleyin</string>
+    <string name="app_lock_biometrics_allowed_title">Kilidi açmak için biyometri kullan</string>
+    <string name="app_lock_footer_text">Baloncuklar zaman aşımından sonra otomatik olarak yok sayılacak</string>
+
+    <!-- Display Settings: Title of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_title">Duvar kağıdı yakınlaştırma efekti</string>
+    <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_summary">Uzaklaştırma derinlik efektini göstermek için duvar kağıdını yakınlaştır. Duvar kağıdı kalitesi düşebilir</string>
+
+    <!-- Screen setting option title for the item to take you to the stock security screen -->
+    <string name="aosp_security_settings_title">Standart kilit seçenekleri</string>
+    <!-- Screen setting option summary text for the item tot ake you to the stock security and location screen -->
+    <string name="aosp_security_settings_summary">Uygulama kilidi, SIM kart kilidi, kimlik bilgisi ile depolama kilidi ayarlayın</string>
+
+    <!-- Legacy WFD settings -->
+    <string name="legacy_wfd_video_mode_title">Video modu</string>
+    <string name="legacy_wfd_video_mode_720p_30fps">720p 30fps</string>
+    <string name="legacy_wfd_video_mode_720p_60fps">720p 60fps</string>
+    <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
+    <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Kullanım verileri temizlensin mi??</string>
+    <string name="battery_stats_message">Pil kullanım verileri silinecek</string>
+
+    <!-- Color adjustment -->
+    <string name="color_mode_balance_category">Renk dengesi</string>
+    <string name="color_mode_balance_red">Kırmızı</string>
+    <string name="color_mode_balance_green">Yeşil</string>
+    <string name="color_mode_balance_blue">Mavi</string>
+    <string name="keywords_color_balance">renk, renk dengesi, renk düzeltme, kırmızı, yeşil, mavi, LiveDisplay</string>
+
+    <!-- Laboratory - Strict standby -->
+    <string name="laboratory_strict_standby_policy_title">Sert bekleme modu davranışı</string>
+    <string name="laboratory_strict_standby_policy_summary">Uygulamaları zorla durdurarak pil kullanımına daha sert kısıtlamalar getirecek.</string>
+
+    <!-- Laboratory - Force background freezer -->
+    <string name="laboratory_force_background_freezer_title">Arka plan görev dondurucusu</string>
+    <string name="laboratory_force_background_freezer_summary">Görevleri arka plana alınca pil kullanımını kısıtlar ve görevi dondurur ön plana alınca tekrar çözer. Pil kullanımını ciddi ölçüde arttırır fakat çökmelere ve arka plan veri kaybına neden olabilir.</string>
+
+    <!-- Hotspot -->
+    <string name="wifi_hotspot_hidden_ssid_title">Gizli ağ</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Cihazınızın hotspot ismi kullanılabilir kablosuz yerel ağlar listesinde görünmeyecek.</string>
+    <string name="wifi_band_24ghz_and_5ghz">2.4 GHz &amp; 5 GHz</string>
+    <string name="wifi_band_24ghz_and_6ghz">2.4 GHz &amp; 6 GHz</string>
+    <string name="wifi_band_60ghz">60 GHz</string>
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Herhangi bir cihaz <xliff:g id="DURATION">%1$d</xliff:g> dakika bağlı değilse kapat</item>
+        <item quantity="one">Cihaz <xliff:g id="DURATION">%1$d</xliff:g> dakika bağlı değise kapat</item>
+    </plurals>
+    <string name="wifi_hotspot_auto_off_timeout_never">Asla kapatma</string>
+    <string name="wifi_hotspot_client_manager_title">Bağlı cihazlar</string>
+    <string name="wifi_hotspot_client_manager_summary">Bağlı cihazları listeleyin ve yönetin, kullanıcılara limit koyun</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Bağlı cihazları listele</string>
+    <string name="wifi_hotspot_client_limit_title">Bağlı cihazları sınırla</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other"> <xliff:g id="device_num">%1$d</xliff:g> kadar cihaz bağlanabilir</item>
+        <item quantity="one"> <xliff:g id="device_num">%1$d</xliff:g> kadar cihaz bağlanabilir</item>
+    </plurals>
+
+    <string name="wifi_hotspot_blocked_clients_list_title">Engellenen cihazlar</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Bağlı cihazlar</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Cihazı engelle</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Bu eylem \"<xliff:g id="device_name">%1$s</xliff:g>\" bu cihazdan bağlantısını kesecek ve engelli listesine atacak</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Cihazın engelini kaldır</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Bu cihaz \"<xliff:g id="device_name">%1$s</xliff:g>\" bu hotspot noktasına bağlanabilecek</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Şu an hiçbir kullanıcı uygun değil. Bağlı ve engelli cihazlar uygun olduğunda burada listelenecek.</string>
+
+    <!-- Laboratory -->
+    <string name="laboratory_settings_preference_title">riceDroid Labaratuvarı</string>
+    <string name="laboratory_settings_footer"> 1. riceDroid laboratuvarında deneysel özellikleri test edebilirsiniz.\n \n 2. Bu özellikler zaman zaman güncellenir.\n  \n 3. burada yayınlanan özellikler test aşamasındadır. Bazı hatalar olabilir, bu yüzden dikkatli kullanın.</string>
+    <string name="laboratory_settings_warning_title">riceDroid Labaratuvarı&#58; Dikkat!</string>
+    <string name="laboratory_settings_warning_message">Yeni özellikler test aşamasındadır. Bazı hatalar olabilir, bu yüzden dikkatli kullanın.</string>
+
+    <!-- Laboratory - Application downgrade -->
+    <string name="laboratory_app_downgrade_title">Sürüm düşürmeye izin ver</string>
+    <string name="laboratory_app_downgrade_summary">Uygulamaların eski sürümüne geri dönmenizi sağlar. Veri kaybına ve çökmelere neden olabilir.</string>
+
+    <!-- Laboratory - Ignore window secure -->
+    <string name="laboratory_ignore_window_secure_title">Pencere güvenli işaretlerini yok say</string>
+    <string name="laboratory_ignore_window_secure_summary">Ekran görüntüsü ve ekran kaydının limitlerini tüm uygulamalar için kaldırır. Normalde, kayıtlardaki siyah alanlarla özel uygulamalar değiştirilir. Bu bazı durumlarda uygun olabilir fakat güvenlik açıklarına neden olabilir. Bu ayarı değiştirdikten sonra, değişikliklerin etkili olması için uygulamaları yeniden başlatmanız gerekebilir.</string>
+
+    <!-- Laboratory - Skiagl -->
+    <string name="laboratory_skiavk_title">Grafik oluşturmak için skia kullan</string>
+    <string name="laboratory_skiavk_summary">Daha iyi grafik oluşumu sağlayabilir fakat sürücü uyumsuzluğundan dolayı grafik hatalarına da sebep olabilir.(Yeniden başlatma gereir)</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Akıllı duraklatma</string>
+    <string name="adaptive_playback_enabled">Akıllı duraklatmayı kullan</string>
+    <string name="adaptive_playback_disabled_summary">Kapalı</string>
+    <string name="adaptive_playback_intro_text">Ses kısıldığında medyayı otomatik olarak duraklatır ve belirlenen süre için de ses açılırsa meya otomatik olarak devam eder.</string>
+    <string name="adaptive_playback_timeout_title">Süre ayarla</string>
+    <string name="adaptive_playback_timeout_none">Süre yok</string>
+    <string name="adaptive_playback_timeout_none_summary">Açık (süre yok)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 saniye</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Açık (30 saniye)</string>
+    <string name="adaptive_playback_timeout_1_min">1 dakika</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Açık (1 dakika)</string>
+    <string name="adaptive_playback_timeout_2_min">2 dakika</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Açık (2 dakika)</string>
+    <string name="adaptive_playback_timeout_5_min">5 dakika</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Açık (5 dakika)</string>
+    <string name="adaptive_playback_timeout_10_min">10 dakika</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Açık (10 dakika)</string>
+
+</resources>
