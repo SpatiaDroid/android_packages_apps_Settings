@@ -274,7 +274,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        collapsing_toolbar.setTitle("Settings");
+        collapsing_toolbar.setTitle(context.getText(R.string.settings_label));
         }
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
         mCategoryMixin = new CategoryMixin(this);

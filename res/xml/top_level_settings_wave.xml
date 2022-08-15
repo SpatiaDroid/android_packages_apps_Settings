@@ -56,8 +56,8 @@
         android:icon="@drawable/ic_homepage_ricedroid"
         android:key="top_level_rice"
         android:order="-130"
-        android:title="@string/rice_settings_title"
-        android:summary="@string/rice_settings_summary"
+        android:title="@string/rice_customizations_title"
+        android:summary="@string/rice_customizations_summary"
         settings:controller="com.rice_settings.TopLevelSettingsPreferenceController"/>
         
     <com.android.settings.widget.HomepagePreference
