@@ -29,21 +29,21 @@ class AboutDevice : FrameLayout {
         val versionCode = SystemProperties.get("ro.rice.code")
         val type = SystemProperties.get("ro.rice.packagetype")
 
-        findViewById<TextView>(R.id.romVersion).text = (if (type.contains("PIXEL")) {
-            version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_gapps)
+        findViewById<TextView>(R.id.romVersion).text = (context.getString(R.string.version)).toString()
+        
+        findViewById<TextView>(R.id.romCodeName).text = (if (type.contains("PIXEL")) {
+            versionCode + " | " + version + " | " + context.getString(R.string.about_device_version_type_gapps)
         } else {
-            version + " | " + versionCode + " | " + context.getString(R.string.about_device_version_type_vanilla)
+            versionCode + " | " +  version + " | " + context.getString(R.string.about_device_version_type_vanilla)
         }).toString()
 
         // Device
-        var mDeviceName = Settings.Global.getString(
-            context.contentResolver,
-            Settings.Global.DEVICE_NAME
-        )
+        var mDeviceName = SystemProperties.get("ro.product.product.device")
+
         if (mDeviceName == null) {
             mDeviceName = Build.MODEL
         }
-        findViewById<LinearLayout>(R.id.deviceEdit).setOnClickListener {
+        findViewById<RelativeLayout>(R.id.entity_header).setOnClickListener {
             val alert: AlertDialog.Builder = AlertDialog.Builder(context, R.style.Theme_AlertDialog)
             val dialogView: View = View.inflate(context, R.layout.dot_device_name_dialog, null)
             val mEditText: EditText = dialogView.findViewById(R.id.device_edit_text)
