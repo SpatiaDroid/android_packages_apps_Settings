@@ -20,7 +20,7 @@ Copyright (C) The 2022 RiceDroid Project
 
     <androidx.cardview.widget.CardView
         android:id="@+id/logo"
-        android:layout_width="440dp"
+        android:layout_width="450dp"
         android:layout_height="170dp"
         android:minWidth="160dp"
         app:cardBackgroundColor="@color/dot_shapeColor"
@@ -32,8 +32,9 @@ Copyright (C) The 2022 RiceDroid Project
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="24dp"
-                    android:gravity="start|center">
+                    android:layout_marginStart="24dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="start|center">
 
                     <TextView
                         android:id="@+id/romVersion"
@@ -41,7 +42,7 @@ Copyright (C) The 2022 RiceDroid Project
                         android:layout_height="match_parent"
                         android:fadingEdge="horizontal"
                         android:layout_gravity="start|center_vertical"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
                         android:textColor="?android:attr/colorAccent"
@@ -52,24 +53,24 @@ Copyright (C) The 2022 RiceDroid Project
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fadingEdge="horizontal"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:layout_gravity="start|center_vertical"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
                         android:textColor="?android:attr/colorAccent"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/deviceName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fadingEdge="horizontal"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:layout_gravity="start|center_vertical"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
                         android:textColor="?android:attr/colorAccent"
-                        android:textSize="13sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
         

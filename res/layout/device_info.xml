@@ -32,8 +32,9 @@ Copyright (C) The 2022 RiceDroid Project
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="24dp"
-                    android:gravity="start|center">
+                    android:layout_marginStart="24dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="start|center">
 
                     <TextView
                         android:id="@+id/romVersion"
@@ -41,7 +42,7 @@ Copyright (C) The 2022 RiceDroid Project
                         android:layout_height="match_parent"
                         android:fadingEdge="horizontal"
                         android:layout_gravity="start|center_vertical"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
                         android:textColor="?android:attr/colorAccent"
@@ -52,7 +53,7 @@ Copyright (C) The 2022 RiceDroid Project
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fadingEdge="horizontal"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:layout_gravity="start|center_vertical"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
@@ -64,12 +65,12 @@ Copyright (C) The 2022 RiceDroid Project
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fadingEdge="horizontal"
-                        android:paddingTop="9dp"
+                        android:paddingTop="6dp"
                         android:layout_gravity="start|center_vertical"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
                         android:textColor="?android:attr/colorAccent"
-                        android:textSize="16sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
         
