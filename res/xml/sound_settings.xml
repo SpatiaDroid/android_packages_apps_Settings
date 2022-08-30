@@ -315,6 +315,14 @@
         android:summary="@string/app_volume_summary"
         android:defaultValue="true"
         android:order="-5"/>
+        
+    <!-- Volume Panel Media Output toggle -->
+    <com.rice.settings.preferences.SystemSettingSwitchPreference
+        android:key="volume_media_output_toggle"
+        android:title="@string/volume_media_output_toggle_title"
+        android:summary="@string/volume_media_output_toggle_summary"
+        android:defaultValue="true"
+        android:order="10"/>
 
     <Preference
         android:key="sound_work_settings"

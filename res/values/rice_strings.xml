@@ -229,4 +229,8 @@
     <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+    
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Show media controller on volume panel</string>
+    <string name="volume_media_output_toggle_summary">Show media controller if there is an active stream</string>
 </resources>
